@@ -48,3 +48,22 @@ h1{
     color: #fff;
     font-size: 75px;
 }
+/* results styling */
+.result{
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+}
+#computer-choice{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+/* moves left styling */
+.moves{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #fff;
+}
