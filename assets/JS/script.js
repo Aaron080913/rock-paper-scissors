@@ -1,9 +1,9 @@
-const options = document.querySelectorAll('.option');
+const choices = document.querySelectorAll('.choice');
 const playerScoreElem = document.querySelector('.player-score');
 const computerScoreElem = document.querySelector('computer-score');
 const resultElem = document.querySelector('#result');
 const resetBtn = document.querySelector('#reset');
-const moveElem = document.querySelector('#moves-left');
+const moveElem = document.querySelector('#moves');
 const computerChoiceElem = document.querySelector('#computer-choice');
 
 const weapons = ['rock', 'paper', 'scissors'];
@@ -19,7 +19,7 @@ function computerPlay() {
 //  function to display result  //
 function updateScore(playerWeapon, computerWeapon) {
     if (playerWeapon) {
-        computerOptionElem.innerHTML = `Computer choose: ${computerWeapon}.`;
+        computerChoiceElem.innerHTML = `Computer choose: ${computerWeapon}.`;
         if (playerWeapon === computerWeapon) {
             resultElem.innerHTML = "It's a tie!";
         } else if (
@@ -79,7 +79,7 @@ function updateScore(playerWeapon, computerWeapon) {
                 choice.style.pointerEvents = 'none';
             });
         }
-        choices.forEach((choice) => choice.addEventListener('click', selectWeapon));
+        options.forEach((option) => option.addEventListener('click', selectWeapon));
         resetBtn.addEventListener('click', resetGame);
     }
 }
