@@ -64,6 +64,22 @@ h1{
 .moves{
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
     color: #fff;
+}
+/* reset button styling */
+.reset{
+    display: block;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem 2 rem;
+    border: 4px solid;
+    border-color: black;
+    color: #fff;
+    background-color: #3a3a3a;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.reset:hover{
+    border-color: #fff;
 }
