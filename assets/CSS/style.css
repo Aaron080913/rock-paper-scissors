@@ -83,3 +83,13 @@ h1{
 .reset:hover{
     border-color: #fff;
 }
+/* make website responsive */
+.options{
+    flex-wrap: wrap;
+}
+.option{
+    margin: 2rem 1rem;
+}
+.moves{
+    margin-top: 1rem;
+}
